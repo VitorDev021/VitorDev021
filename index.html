@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="./imagem/icon.png" type="x-icon">
+		<link type="stylesheet" src="./style.css">
+		<title>Portifolio ( Vitor )</title>
+		
+		<!-- Css -->
+		<style scoped>
+		
+		/* ----- F R A M E W O R K S ----- */
+		
+		.space-between {
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		.align-items {
+			align-items: center;
+		}
+		
+		/* ----- CSS ----- */
+		
+		:root {
+			/* Cores */
+			--one: #4832C1;
+			--two: #50A6D9;
+			--tree: #4C6BCD;
+		}
+		
+		* {
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+		}
+		
+		body {
+			width: 100vw;
+			height: auto;
+			background: #101630;
+			color: var(--);
+			font-family: "Arial";
+		}
+		
+		.contato {
+			width: 100vw;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			background:	linear-gradient(135deg, var(--one),var(--tree),var(--two));
+			position: relative;
+			bottom: 0px;
+			left:	0px;
+			border-radius: 20px 20px 0px 0px;
+			padding: 10px;
+		}
+		
+		.contato h1 {
+			font-size: 22px;
+			color: white;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			letter-spacing: 1px;
+		}
+		
+		.contato-content {
+			width: 90%;
+			height: auto;
+			display: flex;
+			padding-bottom: 35px;
+			border-bottom: 1px solid white;
+		}
+		
+		.contato-content-text {
+			width: auto;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			color: white;
+		}
+		
+		.contato-content-text h1 {
+			font-size: 22px;
+			font-weight: 550;
+			letter-spacing: 0px;
+			margin: 0px 0px 10px 0px;
+		}
+		
+		.contato-content-text p {
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0px;
+			line-height: 20px;
+			width: 75%;
+			margin-bottom: 15px;
+		}
+		
+		.contato-content-text div {
+			padding: 10px;
+			margin-bottom: 10px;
+			width: auto;
+			height: auto;
+		}
+		
+		.contato-content-text ion-icon {
+			font-size: 30px;
+			background: linear-gradient(135deg, #4D99D7, #4946C6);
+			border-radius: 10px;
+		}
+		
+		.contato-content-text h2 {
+			font-size: 16.5px;
+			font-weight: 450;
+			letter-spacing: 0.5px;
+		}
+		
+		.contato-content-form {
+			width: auto;
+			height: auto;
+			padding: 15px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			background: linear-gradient(135deg, #53A9DE, #4843C1);
+			border-radius: 10px;
+		}
+		
+		.contato-content-form input {
+			background: #0F1530;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			padding: 10px;
+			color: white;
+			width: 190px;
+			height: 15%;
+			margin-bottom: 0px;
+			margin-top: 10px;
+		}
+		
+		.contato-content-form textarea {
+			padding: 10px;
+			background: #0F1530;
+			border-radius: 5px;
+			border: none;
+			outline: none;
+			padding: 10px;
+			color: white;
+			width: 190px;
+			height: 35%;
+			margin-top: 10px;
+		}
+		
+		.contato-content-form button {
+			font-size: 15.5px;
+			cursor: pointer;
+			background: #0F1530;
+			border-radius: 5px;
+			border: none;
+			color: white;
+			width: 130px;
+			height: 35px;
+			margin-top: 15px;
+		}
+		
+		/* NAVBAR-BOTTOM */
+		
+		.navbar-bottom {
+			width: 100%;
+			height: auto;
+			padding: 20px 20px 15px 20px;
+			display: flex;
+			justify-content: center;
+			color: white;
+		}
+		
+		.navbar-bottom p {
+			font-size: 15px;
+			font-weight: 400;
+			letter-spacing: 0.2px;
+		}
+		
+		.navbar-bottom div {
+			display: flex;
+			width: auto;
+			height: auto;
+		}
+	
+		/* Experience */
+		
+		.experience {
+			position: relative;
+			width: 100vw;
+			height: 350px;
+			padding: 20px;
+			background: #101630;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.experience h1 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 20px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+		}
+		
+		.experience ul {
+			margin-top: 25px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			width: 90%;
+			height: 55%;
+		}
+		
+		.experience ul li {
+			width: 125px;
+			height: 125px;
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.experience ul li img {
+			width: 100px;
+			height: 100px;
+		}
+		
+		.experience ul li p {
+			margin-top: 2.5px;
+			font-size: 16px;
+			font-weight: 400;
+		}
+			
+		/*------------------------------------
+									PORTIFOLIO
+		------------------------------------*/
+		
+		.portifolio {
+			width: 100vw;
+			height: auto;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			color: white;
+		}
+		
+		.portifolio h1 {
+			font-size: 20px;
+			text-transform: uppercase;
+			letter-spacing: 0.9px;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		
+		.portifolio ul {
+			width: 90%;
+			height: auto;
+			display: flex;
+			justify-content: space-around;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		
+		.portifolio ul li {
+			list-style: none;
+			cursor: pointer;
+			transition: all .3s ease-in-out;
+		}
+		
+		.portifolio ul li:hover {
+			color: #53B6D7;
+		}
+		
+		.projeto {
+			width: 95%;
+			height: auto;
+			display: flex;
+			margin-top: 25px;
+			margin-bottom: 20px;
+		}
+		
+		.projeto-text {
+			width: 50%;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		
+		.projeto-text h1 {
+			font-size: 20px;
+			font-weight: 400;
+			color: #53B6D6;
+			letter-spacing: 1px;
+			margin-bottom: 20px;
+		}
+		
+		.projeto-text h2 {
+			font-size: 22px;
+			font-weight: 600;
+			color: white;
+			letter-spacing: 1px;
+			margin-bottom: 10px;
+		}
+		
+		.projeto-text p {
+			font-size: 15px;
+			font-weight: 600;
+			color: #4E5368;
+			letter-spacing: 1px;
+			line-height: 18px;
+			margin-bottom: 10px;
+		}
+		
+		.projeto-text div {
+			width: auto;
+			height: auto;
+			align-items: center;
+			padding: 10px;
+			font-size: 16px;
+			font-weight: 500;
+			color: white;
+			letter-spacing: 1px;
+			cursor: pointer;
+		}
+		
+		.projeto-text div a {
+			text-decoration: none;
+			color: white;
+			transition: all .3s ease-in-out;
+		}
+		
+		.projeto-text div a:hover {
+			color: #53B6D7;
+		}
+		
+		.projeto-text div ion-icon {
+			font-size: 20px;
+			margin-right: 10px;
+		}
+		
+		
+		
+		.projeto-img {
+			width: 50%;
+			height: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.projeto-img .img {
+			width: 250px;
+			height: 225px;
+			border: 5px solid #53B6D7;
+			border-radius: 10px;
+			position: relative;
+		}
+		
+		.projeto-img .img img {
+			border-radius: 5px;
+			width: 250px;
+			height: 225px;
+			border: 2px solid white;
+			position: absolute;
+			top: -30px;
+			right: -30px;
+		}
+		
+		
+		
+		</style>
+	</head>
+		
+		<body>
+			<!-- Html -->
+			
+			<main class="container">
+				
+				<section class="portifolio">
+				
+					<h1>Portifolio</h1>
+					
+					<ul>
+						<li><a>Websites</a></li>
+						<li><a>Desktop</a></li>
+						<li><a>Outros Projetos</a></li>
+					</ul>
+					
+					<div class="projeto">
+						
+						<section class="projeto-text">
+							
+							<h1>Projeto 1</h1>
+							<h2>Website Pao de Mel</h2>
+							<p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen bool. it has survived not only five centuries, but also the leap into electronic typesetting.</p>
+							<div class="space-between">
+								<ion-icon name="arrow-forward-outline"></ion-icon>
+								<a href="https://paodemeldigo.netlify.app">Read more</a>
+							</div>
+							
+						</section>
+						
+						<section class="projeto-img">
+							
+							<div class="img">
+								<img src="./IMG/paodemeldigo.jpg">
+							</div>
+							
+						</section>
+						
+					</div>
+				
+				</section>
+				
+				<section class="experience">
+				
+					<h1>Experience</h1>
+					
+					<ul>
+					
+						<li>
+							<img src="https://github.com/get-icon/geticon/raw/master/icons/html-5.svg" alt="HTML5">
+							<p>HTML</p>
+						</li>
+						
+						<li>
+							<img src="https://github.com/get-icon/geticon/raw/master/icons/css-3.svg" alt="CSS3">
+							<p>CSS3</p>
+						</li>
+						
+						<li>
+							<img src="https://github.com/get-icon/geticon/raw/master/icons/javascript.svg" alt="JavaScript">
+							<p>Javascript</p>
+						</li>
+						
+					</ul>
+					
+				</section>
+			</main>
+			
+			
+			<!-- Contato -->
+			<footer class="contato align-items">
+				
+				<h1>CONTATO</h1>
+				
+				<div class="contato-content space-between">
+				
+					<section class="contato-content-text">
+						
+						<h1>Mande uma Mensagem</h1>
+						<p>Eu me chamo Vitor, tenho 14 anos e sou <strong>Desenvolvedor Front End</strong></p>
+						
+						<div class="align-items">
+							<ion-icon name="call-outline"></ion-icon>
+							<h2>+55 16 997569308</h2>
+						</div>
+						
+						<div class="align-items">
+							<ion-icon name="mail-outline"></ion-icon>
+							<h2>vitorDeveloper@gmail.com</h2>
+						</div>
+						
+						<div class="align-items">
+							<ion-icon name="location-outline"></ion-icon>
+							<h2 style="width: 80%;">Araraquara/SP, Jardim Indaia, Rua alberto Cione - 964</h2>
+						</div>
+						
+					</section>
+					
+					<form class="contato-content-form">
+						
+						<input type="text" placeholder="Nome">
+						<input type="text" placeholder="Email">
+						<textarea placeholder="Mensagem"></textarea>
+						
+						<button type="submit">Enviar</button>
+						
+					</form>
+					
+					
+				
+				</div>
+				
+				<nav class="navbar-bottom">
+					
+					<p>2023 - Vitor Dev, Todos os direitos reservados</p>
+					<div>
+						<ion-icon name="logo-facebook"></ion-icon>
+						<ion-icon name="logo-instagram"></ion-icon>
+						<ion-icon name="linkedin"></ion-icon>
+						<ion-icon name="behance"></ion-icon>
+					</div>
+					
+				</nav>
+				
+			</footer>
+			
+			
+				<!-- JavaScript -->
+				<script>
+				
+				</script>
+		</body>
+		
+</html>
