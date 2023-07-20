@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="./imagem/icon.png" type="x-icon">
-		<link type="stylesheet" src="./style.css">
+		<link rel="icon" href="./IMG/icon.png" type="x-icon">
 		<title>Portifolio ( Vitor )</title>
 		
 		<!-- Css -->
@@ -18,6 +17,7 @@
 		}
 		
 		.align-items {
+			display: flex;
 			align-items: center;
 		}
 		
@@ -99,16 +99,19 @@
 		}
 		
 		.contato-content-text div {
-			padding: 10px;
-			margin-bottom: 10px;
+			padding-top: 15px;
+			padding-bottom: 15px;
 			width: auto;
 			height: auto;
 		}
 		
-		.contato-content-text ion-icon {
-			font-size: 30px;
+		
+		.contato-content-text div ion-icon {
+			font-size: 35px;
 			background: linear-gradient(135deg, #4D99D7, #4946C6);
 			border-radius: 10px;
+			margin-right: 20px;
+			color: white;
 		}
 		
 		.contato-content-text h2 {
@@ -155,7 +158,7 @@
 		}
 		
 		.contato-content-form button {
-			font-size: 15.5px;
+			font-size: 15px;
 			cursor: pointer;
 			background: #0F1530;
 			border-radius: 5px;
@@ -222,7 +225,7 @@
 		
 		.experience ul li {
 			width: 125px;
-			height: 125px;
+			height: auto;
 			list-style: none;
 			display: flex;
 			flex-direction: column;
@@ -230,13 +233,13 @@
 		}
 		
 		.experience ul li img {
-			width: 100px;
-			height: 100px;
+			width: 90px;
+			height: 90px;
 		}
 		
 		.experience ul li p {
-			margin-top: 2.5px;
-			font-size: 16px;
+			margin-top: 5px;
+			font-size: 15.5px;
 			font-weight: 400;
 		}
 			
@@ -275,17 +278,21 @@
 			list-style: none;
 			cursor: pointer;
 			transition: all .3s ease-in-out;
+			user-select: none;
 		}
 		
 		.portifolio ul li:hover {
 			color: #53B6D7;
 		}
 		
+		/* PROJETO */
+		
 		.projeto {
 			width: 95%;
 			height: auto;
 			display: flex;
-			margin-top: 25px;
+			justify-content: space-around;
+			margin-top: 35px;
 			margin-bottom: 20px;
 		}
 		
@@ -295,6 +302,7 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
+			margin-right: 20px;
 		}
 		
 		.projeto-text h1 {
@@ -349,13 +357,11 @@
 			margin-right: 10px;
 		}
 		
-		
-		
 		.projeto-img {
-			width: 50%;
+			width: auto;
 			height: auto;
 			display: flex;
-			justify-content: center;
+			justify-content: flex-end;
 			align-items: center;
 		}
 		
@@ -371,12 +377,10 @@
 			border-radius: 5px;
 			width: 250px;
 			height: 225px;
-			border: 2px solid white;
 			position: absolute;
 			top: -30px;
 			right: -30px;
 		}
-		
 		
 		
 		</style>
@@ -392,15 +396,15 @@
 					<h1>Portifolio</h1>
 					
 					<ul>
-						<li><a>Websites</a></li>
-						<li><a>Desktop</a></li>
-						<li><a>Outros Projetos</a></li>
+						<li id="buttonWebsites"><a>Websites</a></li>
+						<li id="buttonDesktop"><a>Desktop</a></li>
+						<li id="buttonOutros"><a>Outros Projetos</a></li>
 					</ul>
 					
-					<div class="projeto">
+					<div class="projeto" id="websites">
 						
 						<section class="projeto-text">
-							
+						
 							<h1>Projeto 1</h1>
 							<h2>Website Pao de Mel</h2>
 							<p>Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a gallery of type and scrambled it to make a type specimen bool. it has survived not only five centuries, but also the leap into electronic typesetting.</p>
@@ -421,6 +425,18 @@
 						
 					</div>
 				
+					<!-- Desktop -->
+					
+					<div id="desktop" style="display: none;">
+					
+					</div>
+					
+					<!-- Outros projetos -->
+					
+					<div id="outros" style="display: none;">
+					
+					</div>
+					
 				</section>
 				
 				<section class="experience">
@@ -509,9 +525,102 @@
 			
 			
 				<!-- JavaScript -->
-				<script>
+				
+		</body>
+	
+		<script>
+				
+				// IDS Dos Projetos (WebSite, Desktop, Outros)..
+				/*
+				const websites = document.querySelector("#websites");
+				const desktop = document.querySelector("#desktop");
+				const outros = document.querySelector("#outros");
+				
+				const botaoWebsites = document.querySelector("#buttonWebsites");
+				botaoWebsites.addEventListener("click", () => {
+					desktop.style.display = "none";
+					outros.style.display = "none";
+					websites.style.display = "flex";
+				});
+				
+				const botaoDesktop = document.querySelector("#buttonDesktop");
+				botaoDesktop.addEventListener("click", () => {
+					desktop.style.display = "flex";
+					outros.style.display = "none";
+					websites.style.display = "none";
+				});
+				
+				const botaoOutros = document.querySelector("#buttonOutros");
+				botaoOutros.addEventListener("click", () => {
+					desktop.style.display = "none";
+					outros.style.display = "flex";
+					websites.style.display = "none";
+				});*/
+				
+				
 				
 				</script>
-		</body>
+	
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		
+		<!-------------------------------------------
+										STYLE MOBILE
+		-------------------------------------------->
+		
+		<head>
+			<style scoped>
+			
+			@media (max-width: 768px) {
+				
+				/* PORTIFOLIO */
+				
+				.projeto {
+					flex-direction: column;
+				}
+				
+				.projeto-text {
+					width: 100%;
+					justify-content: center;
+					margin-bottom: 50px;
+				}
+				
+				.projeto-img {
+					justify-content: center;
+				}
+				
+				/* CONTATO */
+				
+				.contato-content {
+					justify-content: none;
+					flex-direction: column;
+				}
+				
+				.contato-content-text {
+					margin-bottom: 50px;
+				}
+				
+				.contato-content-form {
+					width: 50vw;
+					margin: 0px auto 0px 0px;
+					justify-content: center;
+					padding: 20px;
+				}
+				
+				.contato-content-form input {
+					width: 100%;
+					height: 40px;
+				}
+				
+				.contato-content-form textarea {
+					width: 100%;
+					height: 80px;
+				}
+				
+			}
+			
+			
+			</style>
+		</head>
 		
 </html>
